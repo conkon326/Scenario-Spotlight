@@ -1,0 +1,93 @@
+.inner {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-logo {
+    width: 60px;
+    margin: 10px;
+}
+
+.title {
+    color: #bfbfbf;
+    background-color: #36393F;
+    font-size: 40px;
+}
+
+.title-text {
+    color: #777c84;
+    font-size: 40px;
+}
+
+.cf::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 80px;
+    background-color: #131924;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 50px;
+    margin: 10px auto;
+}
+
+#key {
+    height: 500px;
+    background-color: #FFFFA8;
+    margin: 10px auto;
+}
+
+footer {
+    height: 100px;
+    background-color: #C3A8FF;
+    margin: 5px auto;
+}
+
+main {
+    width: 650px;
+    height: 700px;
+    float: left;
+    background-color: #A8EBFF;
+    margin: 5px auto;
+}
+
+aside {
+    width: 300px;
+    height: 700px;
+    float: right;
+    background-color: #FFD4A8;
+    margin: 5px auto;
+}
+
+section {
+    background-color: #1C2129;
+}
+
+
+/*検索ボックス*/
+
+.sbox1 {
+    border: 2px solid;
+    /*枠の太さ・種類*/
+    max-width: 300px;
+    height: 40px;
+    border-radius: 30px;
+    /*枠の角*/
+    border-color: #777c84;
+    /*枠の色*/
+    background-color: #273241;
+    /*背景の色*/
+    padding: .8rem .9rem .8rem .8rem;
+    margin: 0.2rem;
+}
