@@ -6,11 +6,9 @@
   box-sizing: border-box;
 }
 
-/* 全体のスタイル */
+/* フォントファミリーをArial、sans-serifに設定します */
 body {
-  background-color: #F8F8F8;
   font-family: Arial, sans-serif;
-  font-size: 16px;
 }
 
 /* ヘッダー要素のスタイルを定義します */
@@ -21,14 +19,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-/* フッター要素のスタイルを定義します */
-footer {
-  background-color: #333;
-  color: #f2f2f2;
-  padding: 20px;
-  text-align: center;
 }
 
 /* ナビゲーションメニューのスタイルを定義します */
@@ -56,12 +46,18 @@ nav ul li a:hover {
   align-items: center;
 }
 
+.search-form input[type="text"] {
+  padding: auto;
+  border: none;
+  border-radius: 4px;
+}
+
 .search-form .Search {
   background: #4CAF50;
   color: #f2f2f2;
   border: none;
   border-radius: 4px;
-  padding: 13px;
+  padding: auto;
   cursor: pointer;
   margin-left: 8px;
 }
@@ -112,6 +108,7 @@ h2 {
 .scenario-info {
   padding: 10px;
   margin: auto;
+
 }
 
 .scenario-detail-main .scenario-info {
@@ -153,11 +150,21 @@ h2 {
 
 
 
+/* .flex-direction .scenario-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
+
+/* .header-actions */
+
 .button-icon {
   /* display: inline; */
   margin: 8px;
   font-size: 18px;
+
 }
+
 
 /* シナリオ詳細情報のスタイルを定義します */
 .scenario-detail-main {
@@ -208,65 +215,67 @@ h2 {
   display: none;
 }
 
-
-/* フォームのスタイル */
-.sinario-post {
-  background-color: #FFFFFF;
-  border: 1px solid #CCCCCC;
-  margin: 20px auto;
-  max-width: 600px;
+/* フッター要素のスタイルを定義します */
+footer {
+  background-color: #333;
+  color: #f2f2f2;
   padding: 20px;
+  text-align: center;
 }
 
-/* フォーム内のラベルのスタイル */
-label {
+
+/* 検索フォームのスタイル */
+form input[type="text"] {
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+}
+
+form button[type="submit"] {
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* 投稿フォームのスタイル */
+form .sinario-post {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form h1 .sinario-post {
+  margin-bottom: 20px;
+}
+
+form label .sinario-post {
   display: block;
-  font-size: 14px;
-  font-weight: bold;
   margin-bottom: 5px;
 }
 
-/* フォーム内の入力欄のスタイル */
-input[type="text"],
-input[type="number"],
-input[type="date"],
-textarea {
-  border: 1px solid #CCCCCC;
-  border-radius: 4px;
-  font-size: 16px;
-  padding: 10px;
+.sinario-post,
+form input[type="text"],
+form select,
+form textarea {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
   width: 100%;
 }
 
-/* フォーム内の選択ボックスのスタイル */
-select {
-  border: 1px solid #CCCCCC;
-  font-size: 16px;
-  padding: 10px;
-  width: 100%;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><path d="M6,10.5L0,3h12L6,10.5z"/></svg>') no-repeat right 10px center;
-  background-color: #FFFFFF;
-  background-size: 12px;
-  color: #555555;
+.sinario-post form select option[disabled] {
+  display: none;
 }
 
-/* フォーム内の送信ボタンのスタイル */
-.post-button {
-  background-color: #007ACC;
+.sinario-post form input[type="submit"] {
+  padding: 10px;
   border: none;
   border-radius: 5px;
-  color: #FFFFFF;
+  background-color: #333;
+  color: #fff;
   cursor: pointer;
-  font-size: 16px;
-  margin-top: 20px;
-  padding: 10px;
-  transition: all 0.3s ease;
-  width: 100%;
-}
-
-.post-button:hover {
-  background-color: #005B9F;
 }

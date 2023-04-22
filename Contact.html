@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Scenario-Spotlight</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<header>
+		<!-- タイトル -->
+		<h1>Scenario-Spotlight</h1>
+
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li> <!-- ホームページへのリンク -->
+				<li><a href="sinario.html">Reviews</a></li> <!-- レビューページへのリンク -->
+				<li><a href="post.html">Post</a></li> <!-- 投稿ページへのリンク -->
+				<li><a href="Contact.html">Contact</a></li> <!-- コンタクトページへのリンク -->
+			</ul>
+		</nav>
+		<form class="search-form">
+			<input type="text" placeholder="Search...">
+			<!-- 検索ボックス -->
+			<button type="submit" class="Search">Search</button>
+			<!-- 検索ボタン -->
+		</form>
+	</header>
+	<!-- ↑共通ヘッダー↑ -->
+<main>
+	<h1>お問い合わせフォーム</h1>
+	<p>ご意見、ご感想、お問い合わせ等ございましたら、以下のフォームよりお気軽にご連絡ください。</p>
+	
+	<form action="" method="post">
+		<label for="name">お名前（必須）：</label>
+		<input type="text" id="name" name="name" required><br>
+		<label for="email">メールアドレス（必須）：</label>
+		<input type="email" id="email" name="email" required><br>
+		<label for="subject">件名（必須）：</label>
+		<input type="text" id="subject" name="subject" required><br>
+		<label for="message">お問い合わせ内容（必須）：</label><br>
+		<textarea id="message" name="message" required></textarea><br>
+		<input type="submit" value="送信する">
+	</form>
+	
+	<p>注意事項：</p>
+	<ul>
+		<li>お問い合わせには、できる限り迅速な対応を心がけておりますが、回答までにお時間をいただく場合がございます。予めご了承ください。</li>
+		<li>ご記入いただいた個人情報は、お問い合わせ対応以外には使用いたしません。</li>
+		<li>内容によっては、返信を差し控えさせていただく場合がございます。予めご了承ください。</li>
+	</ul>
+	</main>
+	<footer>
+		<p>&copy; 2023 Scenario-Spotlight</p>
+	</footer>
+	<script src="app.js"></script>
+</body>
+
+</html>

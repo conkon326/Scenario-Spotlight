@@ -13,52 +13,78 @@
     <h1>Scenario-Spotlight</h1>
 
     <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li> <!-- ホームページへのリンク -->
-        <li><a href="Reviews.html">Reviews</a></li> <!-- レビューページへのリンク -->
-        <li><a href="#">About</a></li> <!-- アバウトページへのリンク -->
-        <li><a href="post.html">Post</a></li> <!-- シナリオ投稿ページへのリンク -->
-        <li><a href="#">Contact</a></li> <!-- コンタクトページへのリンク -->
-      </ul>
+        <ul>
+          <li><a href="index.html">Home</a></li> <!-- ホームページへのリンク -->
+          <li><a href="sinario.html">Reviews</a></li> <!-- レビューページへのリンク -->
+          <li><a href="post.html">Post</a></li> <!-- 投稿ページへのリンク -->
+          <li><a href="Contact.html">Contact</a></li> <!-- コンタクトページへのリンク -->
+        </ul>
     </nav>
     <form class="search-form">
-      <input type="text" placeholder="Search..."> <!-- 検索ボックス -->
-      <button type="submit" class="Search">Search</button> <!-- 検索ボタン -->
+      <input type="text" placeholder="Search...">
+      <!-- 検索ボックス -->
+      <button type="submit" class="Search">Search</button>
+      <!-- 検索ボタン -->
     </form>
-    </header>
-    <form class="sinario-post">
-      <h1>シナリオ投稿フォーム</h1>
-    
+  </header>
+
+  <!-- ↑共通ヘッダー↑ -->
+  <form class="sinario-post">
+    <h1>シナリオ投稿フォーム</h1>
+<label for="trailer-image">トレイラー画像:</label>
+<input type="file" id="trailer-image" class="trailer-image" name="trailer-image" accept="image/*">
+
       <label for="scenario-name">シナリオ名:</label>
-      <input type="text" id="scenario-name" name="scenario-name" required>
-    
-      <label for="author">作者:</label>
-      <input type="text" id="author" name="author" required>
-    
-      <label for="system">システム名:</label>
-      <input type="text" id="system" name="system" required>
-    
-      <label for="player-num">PL人数:</label>
-      <select id="player-num" name="player-num" required>
-        <option value="" selected disabled hidden>選択してください</option>
-        <option value="1">1人</option>
-        <option value="2">2人</option>
-        <option value="3">3人</option>
-        <option value="4">4人</option>
-        <option value="5">5人</option>
-        <option value="6">6人以上</option>
+      <input type="text" id="scenario-name" name="scenario-name" placeholder="ここにはシナリオ名を入れてください" required>
+      
+      <label for="author">シナリオ作者名:</label>
+      <input type="text" id="author" name="author" placeholder="ここにはシナリオ作者名を入れてください" required>
+      
+      <label for="release-date">公開日:</label>
+      <input type="date" id="release-date" name="release-date">
+      
+      <label for="system">使用システム:</label>
+      <select id="system" name="system" required>
+        <option value="" selected disabled hidden>使用システムを選択してください</option>
+        <option value="1">クトゥルフ神話TRPG</option>
+        <option value="2">インセイン</option>
+        <option value="3">シノビガミ</option>
+        <option value="4">エモクロア</option>
+        <option value="5">ダブルクロスThe 3rd Edition</option>
+        <option value="6">キルデスビジネス</option>
+        <option value="7">魔道書大戦RPG マギカロギア</option>
+        <option value="8">永い後日談のネクロニカ</option>
+        <option value="9">灰色城綺譚</option>
+        <option value="10">トーキョーN◎VA</option>
+        <option value="11">：プレイ･バイ･レター</option>
+        <option value="12">ソード・ワールドRPG</option>
+        <option value="13">マーダーミステリー</option>
+        <option value="14">アリアンロッドRPG</option>
+        <option value="15">Kutulu</option>
+        <option value="16">パラノイア</option>
       </select>
-    
-      <label for="tags">タグ:</label>
-      <input type="text" id="tags" name="tags">
-    
-      <label for="synopsis">あらすじ:</label>
-      <textarea id="synopsis" name="synopsis" rows="5" required></textarea>
-    
-      <input type="submit" value="投稿">
-    </form>
-    <footer>
-      <p>&copy; 2023 Scenario-Spotlight</p>
-    </footer>
-  </body>
+      
+      <label for="player-num">PL人数:</label>
+      <input type="number" id="player-min" name="player-min" min="1" max="100" placeholder="最小値">
+      <span>〜</span>
+      <input type="number" id="player-max" name="player-max" min="1" max="100" placeholder="最大値">
+      
+      <label for="play-time">プレイ時間:</label>
+      <input type="number" id="time-min" name="time-min" min="1" max="24" placeholder="最小値">
+      <span>〜</span>
+      <input type="number" id="time-max" name="time-max" min="1" max="24" placeholder="最大値">
+
+
+    <label for="synopsis">あらすじ:</label>
+    <textarea id="synopsis" name="synopsis" rows="5"  placeholder="ここにはシナリオのあらすじを記載してください" required></textarea>
+
+    <input type="submit" class="post-button" value="投稿">
+  </form>
+
+  <!-- ↓共通フッター↓ -->
+  <footer>
+    <p>&copy; 2023 Scenario-Spotlight</p>
+  </footer>
+</body>
+
 </html>
