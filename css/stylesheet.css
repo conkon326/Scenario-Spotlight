@@ -1,0 +1,63 @@
+.logo {
+  max-height: 80px;
+}
+
+.box1 {
+  background-color: #F2E5D7;
+}
+
+.box2 {
+  background-color: #FFBCB5;
+
+}
+
+.box3 {
+  background-color: #C97D60;
+
+}
+
+.box4 {
+  background-color: #63372C;
+
+}
+
+
+
+
+.container-1 {
+  position: relative;
+  width: auto;
+  /* 正方形の画像の幅 */
+  height: 200px;
+  /* 正方形の画像の高さ */
+  background-color: #F3F2F0;
+}
+
+.hatenablogcard {
+  position: absolute;
+  width: auto;
+  /* 正方形の画像の幅 */
+  height: 200px;
+  /* 正方形の画像の高さ */
+}
+
+.calligraphy {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 85%;
+
+  /* 重ねる画像の幅（正方形の画像に対しての割合） */
+  max-height: 85%;
+  /* 高さは自動調整 */
+  z-index: 1;
+  /* 重ねる画像の重なり順 */
+}
+
+.text-truncate-3row {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

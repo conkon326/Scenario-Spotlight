@@ -1,122 +1,268 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="ja">
 <head>
-	<meta charset="UTF-8">
-	<title>Scenario-Spotlight</title>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/stylesheet.css" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+
+  <title>Scenario Spotlight</title>
 </head>
 
-<body>
-	<header>
-		<!-- タイトル -->
-		<h1>Scenario-Spotlight</h1>
+<body class="m-0">
 
-		<nav>
-			<ul>
-				<li><a href="index.html">Home</a></li> <!-- ホームページへのリンク -->
-				<li><a href="sinario.html">Reviews</a></li> <!-- レビューページへのリンク -->
-				<li><a href="post.html">Post</a></li> <!-- 投稿ページへのリンク -->
-				<li><a href="Contact.html">Contact</a></li> <!-- コンタクトページへのリンク -->
-			</ul>
-		</nav>
-		<form class="search-form">
-			<input type="text" placeholder="Search...">
-			<!-- 検索ボックス -->
-			<button type="submit" class="Search">Search</button>
-			<!-- 検索ボタン -->
-		</form>
-	</header>
-	<!-- ↑共通ヘッダー↑ -->
-    <main>
-        <h2>Featured Scenarios</h2>
-        <div class="scenarios-container">
-          <div class="scenario">
-            <a href="#">
-              <img src="https://placehold.jp/128x182.png" alt="Scenario 1">
-              <div class="scenario-info">
-              <h3>Scenario Title 1</h3> <!-- シナリオタイトル -->
-              <p>Author Name</p> <!-- シナリオ作者名 -->
-              <p>System</p> <!-- システム名 -->
+
+  <!-- header -->
+
+  <div class="container border mt-2">
+    <div class="row">
+      <nav class="navbar navbar-expand navbar-light bg-light">
+        <a class="navbar-brand" href="#"><a href="index.html">
+          <img class="logo" src="img/Banner/Banner01.png" alt="logo"></a>
+        </a>
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">メニュー</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">メニュー</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">メニュー</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">メニュー</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="row header">
+        <div class="box1 col-3">box1</div>
+        <div class="box2 col-3">box2</div>
+        <div class="box3 col-3">box3</div>
+        <div class="box4 col-3">box4</div>
+      </div>
+
+      <!-- なんか -->
+
+      <div class="row mt-2">
+        <div class="box1 col">box1</div>
+        <div class="box2 col">box2</div>
+        <div class="box1 col">box3</div>
+        <div class="box2 col">box4</div>
+        <div class="box1 col">box5</div>
+        <div class="box2 col">box6</div>
+        <div class="box1 col">box7</div>
+        <div class="box2 col">box8</div>
+        <div class="box1 col">box9</div>
+        <div class="box2 col">box10</div>
+        <div class="box1 col">box11</div>
+        <div class="box2 col">box12</div>
+      </div>
+
+      <!-- main -->
+      <div class="container mt-2">
+        <div class="row">
+          <div class="column col-lg-9 ">
+                    <div class="row">
+<span class="fs-2 fw-bold align-middle m-1 border border-success border-5  col-11">おすすめシナリオ</span>
+    </div>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+              <!-- ここからカード -->
+              <div class="col">
+                <div class="card h-100">
+                  <div class="container-1"><a href="shinario.html">
+                    <img class="calligraphy" src="img/shinario/shinario_001.jpg" alt="vertical-image"></a>
+                  </div>
+                  <div class="card-body">
+                    <h6 5 class="card-title">こんぽた。</h6>
+                    <p class="card-text text-truncate-3row">憧れの先輩に彼氏が出来たらしいんだけど、ツーショット見る限り明らかに人間ではない件について</p>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-muted">最終更新3分前</small>
+                  </div>
+                </div>
               </div>
-            </a>
+
+              <div class="col">
+                <div class="card h-100">
+                  <div class="container-1">
+                    <img class="calligraphy" src="img/shinario/shinario_002.png" alt="horizontal Image">
+                  </div>
+                  <div class="card-body">
+                    <h6 class="card-title">こんぽた。</h6>
+                    <p class="card-text text-truncate-3row">
+                      借金探偵と探偵にあこがれる助手、不遇な闇金の人が、金持ちの楽な依頼で借金を返せるとおもいきや、廃村でなんかと戦い命からがら帰ってきたりこなかったりする話</p>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-muted">最終更新3分前</small>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card h-100">
+                  <div class="container-1">
+                    <img class="calligraphy" src="img/shinario/shinario_003.png" alt="square-image">
+                  </div>
+                  <div class="card-body">
+                    <h6 class="card-title">こんぽた。</h6>
+                    <p class="card-text text-truncate-3row">カミノミゾシルセカイ</p>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-muted">最終更新3分前</small>
+                  </div>
+                </div>
+              </div>
+              </div>
+<div class="row">
+  <span class="fs-2 fw-bold align-middle m-1 border border-success border-5  col-11">クトゥルフ神話TRPG</span>
+</div>
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  <!-- ここからカード -->
+  <div class="col">
+    <div class="card h-100">
+      <div class="container-1">
+        <img class="calligraphy" src="img/shinario/shinario_001.jpg" alt="vertical-image">
+      </div>
+      <div class="card-body">
+        <h6 5 class="card-title">こんぽた。</h6>
+        <p class="card-text text-truncate-3row">憧れの先輩に彼氏が出来たらしいんだけど、ツーショット見る限り明らかに人間ではない件について</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">最終更新3分前</small>
+      </div>
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="card h-100">
+      <div class="container-1">
+        <img class="calligraphy" src="img/shinario/shinario_002.png" alt="horizontal Image">
+      </div>
+      <div class="card-body">
+        <h6 class="card-title">こんぽた。</h6>
+        <p class="card-text text-truncate-3row">
+          借金探偵と探偵にあこがれる助手、不遇な闇金の人が、金持ちの楽な依頼で借金を返せるとおもいきや、廃村でなんかと戦い命からがら帰ってきたりこなかったりする話</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">最終更新3分前</small>
+      </div>
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="card h-100">
+      <div class="container-1">
+        <img class="calligraphy" src="img/shinario/shinario_003.png" alt="square-image">
+      </div>
+      <div class="card-body">
+        <h6 class="card-title">こんぽた。</h6>
+        <p class="card-text text-truncate-3row">カミノミゾシルセカイ</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">最終更新3分前</small>
+      </div>
+    </div>
+  </div>
+    <div class="col-9 m-0">
+      <span class="fs-2 fw-bold align-middle m-1 border border-success border-5  col-11 text-nowrap">手紙でキセキを綴るTRPG「：プレイ･バイ･レター」</span>
+    </div>
+              <div class="col">
+                <div class="card h-100">
+                  <div class="container-1">
+                    <img class="calligraphy" src="img/shinario/shinario_004.webp" alt="vertical-image">
+                  </div>
+                  <div class="card-body">
+                    <h6 5 class="card-title">こんぽた。</h6>
+                    <p class="card-text text-truncate-3row">to:ゴリラ in school days</p>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-muted">最終更新3分前</small>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card h-100">
+                  <div class="container-1">
+                    <img class="calligraphy" src="img/shinario/shinario_005.webp" alt="horizontal Image">
+                  </div>
+                  <div class="card-body">
+                    <h6 class="card-title">鬼志</h6>
+                    <p class="card-text text-truncate-3row">
+                      to:風船と向日葵</p>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-muted">最終更新3分前</small>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card h-100">
+                  <div class="container-1">
+                    <img class="calligraphy" src="img/shinario/shinario_006.webp" alt="square-image">
+                  </div>
+                  <div class="card-body">
+                    <h6 class="card-title">40Ω</h6>
+                    <p class="card-text text-truncate-3row">私の夢</p>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-muted">最終更新3分前</small>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ここまでカード -->
+
+              
+              </div>
           </div>
-                    <!-- 以下同様のシナリオ情報の表示 -->
-          <div class="scenario">
-            <a href="#">
-              <img src="https://placehold.jp/182x128.png" alt="Scenario 2">
-              <div class="scenario-info">
-                <h3>Scenario Title 2</h3>
-                <p>Author Name</p>
-                <p>System</p>
-              </div>
-            </a>
-          </div>
-          <div class="scenario">
-            <a href="#">
-              <img src="https://placehold.jp/128x182.png" alt="Scenario 3">
-              <div class="scenario-info">
-                <h3>Scenario Title 3</h3>
-                <p>Author Name</p>
-                <p>System</p>
-              </div>
-            </a>
-          </div>
-          <div class="scenario">
-            <a href="#">
-              <img src="https://placehold.jp/128x182.png" alt="Scenario 4">
-              <div class="scenario-info">
-                <h3>Scenario Title 4</h3>
-                <p>Author Name</p>
-                <p>System</p>
-              </div>
-            </a>
-          </div>
-          <div class="scenario">
-            <a href="#">
-              <img src="https://placehold.jp/128x182.png" alt="Scenario 5">
-              <div class="scenario-info">
-                <h3>Scenario Title 5</h3>
-                <p>Author Name</p>
-                <p>System</p>
-              </div>
-            </a>
-          </div>
-          <div class="scenario">
-            <a href="#">
-              <img src="https://placehold.jp/128x182.png" alt="Scenario 6">
-              <div class="scenario-info">
-                <h3>Scenario Title 6</h3>
-                <p>Author Name</p>
-                <p>System</p>
-              </div>
-            </a>
-          </div>
-          <div class="scenario">
-            <a href="#">
-              <img src="https://placehold.jp/128x182.png" alt="Scenario 7">
-              <div class="scenario-info">
-                <h3>Scenario Title 7</h3>
-                <p>Author Name</p>
-                <p>System</p>
-              </div>
-            </a>
-          </div>
-          <div class="scenario">
-            <a href="#">
-              <img src="https://placehold.jp/128x182.png" alt="Scenario 8">
-              <div class="scenario-info">
-                <h3>Scenario Title 8</h3>
-                <p>Author Name</p>
-                <p>System</p>
-              </div>
-            </a>
+
+
+          <!-- side -->
+          <div class="side col-lg-3 bg-secondary">
+            <h4>About me</h4>
+            <p>こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。</p>
           </div>
         </div>
-      </main>
-      
-    <footer>
-      <p>&copy; 2023 Scenario-Spotlight</p>
-    </footer>
-  </body>
+        <!--ここまでがメインコンテンツ -->
+
+      <div class="row mt-2">
+        <div class="box1 col">box1</div>
+        <div class="box2 col">box2</div>
+        <div class="box1 col">box3</div>
+        <div class="box2 col">box4</div>
+        <div class="box1 col">box5</div>
+        <div class="box2 col">box6</div>
+        <div class="box1 col">box7</div>
+        <div class="box2 col">box8</div>
+        <div class="box1 col">box9</div>
+        <div class="box2 col">box10</div>
+        <div class="box1 col">box11</div>
+        <div class="box2 col">box12</div>
+      </div>
+        <!-- fotter -->
+        <footer class="row h-10 bg-secondary mt-2">
+          <div class="col text-center">
+            <p class="text-white  ">© 2023 Scenario-Spotlight</p>
+          </div>
+        </footer>
+      </div>
+      <!-- JS -->
+      <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script> -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>
