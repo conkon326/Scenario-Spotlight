@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,8 +9,7 @@
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
   <title>Scenario Spotlight</title>
 </head>
@@ -18,29 +18,49 @@
 
 
   <!-- header -->
-
+  <header class="bg-secondary mt-2 text-center text-white p-5">header</header>
   <div class="container border mt-2">
     <div class="row">
-      <nav class="navbar navbar-expand navbar-light bg-light">
-        <a class="navbar-brand" href="#"><a href="index.html">
-          <img class="logo" src="img/Banner/Banner01.png" alt="logo"></a>
-        </a>
-        <div class="collapse navbar-collapse">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="#">メニュー</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">メニュー</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">メニュー</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">メニュー</a>
-            </li>
-          </ul>
-        </div>
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-md bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Scenario-Spotlight</a>
+          <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#Navbar"
+            aria-controls="Navbar" aria-expanded="false" aria-label="ナビゲーションの切替">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="Navber">
+            <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">ホーム</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">お知らせ</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  ドロップダウン
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">COC</a></li>
+                  <li><a class="dropdown-item" href="#">プレイバイレター </a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">その他</a></li>
+                </ul>
+
+              </li>
+
+            </ul>
+            <form class="d-flex" role="search">
+              <input type="search" class="form-control me-2" placeholder="検索..." aria-label="検索...">
+              <button type="submit" class="btn btn-outline-success flex-shrink-0">検索</button>
+            </form>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
       </nav>
       <div class="row header">
         <div class="box1 col-3">box1</div>
@@ -65,20 +85,40 @@
         <div class="box1 col">box11</div>
         <div class="box2 col">box12</div>
       </div>
-
-      <!-- main -->
+<div id="carouselExampleControls" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/shinario/03.webp" class="d-block w-100" alt="第1スライド">
+    </div>
+    <div class="carousel-item">
+      <img src="img/shinario/04.webp" class="d-block w-100" alt="第2スライド">
+    </div>
+    <div class="carousel-item">
+      <img src="img/shinario/10.webp" class="d-block w-100" alt="第3スライド">
+    </div>
+  </div>
+  <button type="button" class="carousel-control-prev" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">前へ</span>
+  </button>
+  <button type="button" class="carousel-control-next" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">次へ</span>
+  </button>
+</div>
+<!-- main -->
       <div class="container mt-2">
         <div class="row">
           <div class="column col-lg-9 ">
-                    <div class="row">
-<span class="fs-2 fw-bold align-middle m-1 border border-success border-5  col-11">おすすめシナリオ</span>
-    </div>
+            <div class="row">
+              <span class="fs-2 fw-bold align-middle m-1 border border-success border-5  col-11">おすすめシナリオ</span>
+            </div>
             <div class="row row-cols-1 row-cols-md-3 g-4">
               <!-- ここからカード -->
               <div class="col">
                 <div class="card h-100">
                   <div class="container-1"><a href="shinario.html">
-                    <img class="calligraphy" src="img/shinario/shinario_001.jpg" alt="vertical-image"></a>
+                      <img class="calligraphy" src="img/shinario/shinario_001.jpg" alt="vertical-image"></a>
                   </div>
                   <div class="card-body">
                     <h6 5 class="card-title">こんぽた。</h6>
@@ -120,60 +160,61 @@
                   </div>
                 </div>
               </div>
+            </div>
+            <div class="row">
+              <span class="fs-2 fw-bold align-middle m-1 border border-success border-5  col-11">クトゥルフ神話TRPG</span>
+            </div>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+              <!-- ここからカード -->
+              <div class="col">
+                <div class="card h-100">
+                  <div class="container-1">
+                    <img class="calligraphy" src="img/shinario/shinario_001.jpg" alt="vertical-image">
+                  </div>
+                  <div class="card-body">
+                    <h6 5 class="card-title">こんぽた。</h6>
+                    <p class="card-text text-truncate-3row">憧れの先輩に彼氏が出来たらしいんだけど、ツーショット見る限り明らかに人間ではない件について</p>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-muted">最終更新3分前</small>
+                  </div>
+                </div>
               </div>
-<div class="row">
-  <span class="fs-2 fw-bold align-middle m-1 border border-success border-5  col-11">クトゥルフ神話TRPG</span>
-</div>
-<div class="row row-cols-1 row-cols-md-3 g-4">
-  <!-- ここからカード -->
-  <div class="col">
-    <div class="card h-100">
-      <div class="container-1">
-        <img class="calligraphy" src="img/shinario/shinario_001.jpg" alt="vertical-image">
-      </div>
-      <div class="card-body">
-        <h6 5 class="card-title">こんぽた。</h6>
-        <p class="card-text text-truncate-3row">憧れの先輩に彼氏が出来たらしいんだけど、ツーショット見る限り明らかに人間ではない件について</p>
-      </div>
-      <div class="card-footer">
-        <small class="text-muted">最終更新3分前</small>
-      </div>
-    </div>
-  </div>
 
-  <div class="col">
-    <div class="card h-100">
-      <div class="container-1">
-        <img class="calligraphy" src="img/shinario/shinario_002.png" alt="horizontal Image">
-      </div>
-      <div class="card-body">
-        <h6 class="card-title">こんぽた。</h6>
-        <p class="card-text text-truncate-3row">
-          借金探偵と探偵にあこがれる助手、不遇な闇金の人が、金持ちの楽な依頼で借金を返せるとおもいきや、廃村でなんかと戦い命からがら帰ってきたりこなかったりする話</p>
-      </div>
-      <div class="card-footer">
-        <small class="text-muted">最終更新3分前</small>
-      </div>
-    </div>
-  </div>
+              <div class="col">
+                <div class="card h-100">
+                  <div class="container-1">
+                    <img class="calligraphy" src="img/shinario/shinario_002.png" alt="horizontal Image">
+                  </div>
+                  <div class="card-body">
+                    <h6 class="card-title">こんぽた。</h6>
+                    <p class="card-text text-truncate-3row">
+                      借金探偵と探偵にあこがれる助手、不遇な闇金の人が、金持ちの楽な依頼で借金を返せるとおもいきや、廃村でなんかと戦い命からがら帰ってきたりこなかったりする話</p>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-muted">最終更新3分前</small>
+                  </div>
+                </div>
+              </div>
 
-  <div class="col">
-    <div class="card h-100">
-      <div class="container-1">
-        <img class="calligraphy" src="img/shinario/shinario_003.png" alt="square-image">
-      </div>
-      <div class="card-body">
-        <h6 class="card-title">こんぽた。</h6>
-        <p class="card-text text-truncate-3row">カミノミゾシルセカイ</p>
-      </div>
-      <div class="card-footer">
-        <small class="text-muted">最終更新3分前</small>
-      </div>
-    </div>
-  </div>
-    <div class="col-9 m-0">
-      <span class="fs-2 fw-bold align-middle m-1 border border-success border-5  col-11 text-nowrap">手紙でキセキを綴るTRPG「：プレイ･バイ･レター」</span>
-    </div>
+              <div class="col">
+                <div class="card h-100">
+                  <div class="container-1">
+                    <img class="calligraphy" src="img/shinario/shinario_003.png" alt="square-image">
+                  </div>
+                  <div class="card-body">
+                    <h6 class="card-title">こんぽた。</h6>
+                    <p class="card-text text-truncate-3row">カミノミゾシルセカイ</p>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-muted">最終更新3分前</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-9 m-0">
+                <span
+                  class="fs-2 fw-bold align-middle m-1 border border-success border-5  col-11 text-nowrap">手紙でキセキを綴るTRPG「：プレイ･バイ･レター」</span>
+              </div>
               <div class="col">
                 <div class="card h-100">
                   <div class="container-1">
@@ -222,8 +263,8 @@
 
               <!-- ここまでカード -->
 
-              
-              </div>
+
+            </div>
           </div>
 
 
@@ -235,34 +276,33 @@
         </div>
         <!--ここまでがメインコンテンツ -->
 
-      <div class="row mt-2">
-        <div class="box1 col">box1</div>
-        <div class="box2 col">box2</div>
-        <div class="box1 col">box3</div>
-        <div class="box2 col">box4</div>
-        <div class="box1 col">box5</div>
-        <div class="box2 col">box6</div>
-        <div class="box1 col">box7</div>
-        <div class="box2 col">box8</div>
-        <div class="box1 col">box9</div>
-        <div class="box2 col">box10</div>
-        <div class="box1 col">box11</div>
-        <div class="box2 col">box12</div>
+        <div class="row mt-2">
+          <div class="box1 col">box1</div>
+          <div class="box2 col">box2</div>
+          <div class="box1 col">box3</div>
+          <div class="box2 col">box4</div>
+          <div class="box1 col">box5</div>
+          <div class="box2 col">box6</div>
+          <div class="box1 col">box7</div>
+          <div class="box2 col">box8</div>
+          <div class="box1 col">box9</div>
+          <div class="box2 col">box10</div>
+          <div class="box1 col">box11</div>
+          <div class="box2 col">box12</div>
+        </div>
       </div>
-        <!-- fotter -->
-        <footer class="row h-10 bg-secondary mt-2">
-          <div class="col text-center">
-            <p class="text-white  ">© 2023 Scenario-Spotlight</p>
-          </div>
-        </footer>
-      </div>
-      <!-- JS -->
-      <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    </div>
+  </div>
+  <!-- fotter -->
+  <footer class="bg-secondary mt-2 text-center text-white p-5 mt-">© 2023 Scenario-Spotlight
+  </footer>
+  <!-- JS -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
         crossorigin="anonymous"></script> -->
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-        crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
